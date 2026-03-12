@@ -2243,6 +2243,13 @@ a.close-content {
 
 @media (max-width: 479px){
 
+.hide-heared {
+    display: none;
+}
+.hide-tab ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
 .card, .banner-text {
     width: 100%;
 }
