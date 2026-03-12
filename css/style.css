@@ -127,11 +127,11 @@ header .table .table-cell:first-child{
 }
 .notification-section {
     position: absolute;
-    top: 50px;
-    left: -518px;
+    top: 74px;
+    right: 90px;
     max-width: 550px;
     background: #fff;
-    padding: 20px;
+    padding: 40px 20px 20px;
     z-index: 3;
     border-radius: 8px;
     display: none;
@@ -170,6 +170,14 @@ header .table .table-cell:first-child{
 .menu-open, .alter, .header-menu{
 	display: inline-block;
 	vertical-align: middle;
+}
+.alter a{
+    display: inline-block;
+}
+a.n-close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
 }
 .list-box p {
     font-size: 16px;

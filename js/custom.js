@@ -80,6 +80,14 @@ $(".a-close").click(function(){
     $("body").removeClass('about');
 });
 
+$(".alter").click(function(){
+    $(".notification-section").fadeIn(500)
+});
+
+$(".n-close").click(function(){
+    $(".notification-section").fadeOut(500)
+})
+
 })
 
 
