@@ -634,23 +634,95 @@ a.cut-1 {
 .box{
 	position: relative;
 }
-.span-sec {
-    width: 60px;
-    height: 60px;
-    display: inline-block;
-    background: #ffcd35;
-    position: absolute;
-    z-index: 1;
-    line-height: 55px;
-    border-radius: 100%;
-    bottom: 35%;
-    transform: translate(0, -35%);
-    right: 0;
-    left: 0;
+.circle-wrap {
+    width: 150px;
+    height: 150px;
+    background: #e5deda;
+    border-radius: 50%;
     margin: 0 auto;
-    color: #fff;
-    border: 3px solid #fff;
 }
+
+    .circle-wrap .circle .mask,
+    .circle-wrap .circle .fill {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        border-radius: 50%;
+    }
+
+    .circle-wrap .circle .mask {
+        clip: rect(0px, 150px, 150px, 74px);
+    }
+
+    .circle-wrap .circle .mask .fill {
+        clip: rect(0px, 75px, 150px, 0px);
+        background-color: #ffcd35;
+    }
+
+    .circle-wrap.firstPercentage .circle .mask.full,
+    .circle-wrap.firstPercentage .circle .fill {
+        animation: firstPercentage ease-in-out 3s forwards;
+    }
+
+    .circle-wrap.secondPercentage .circle .mask.full,
+    .circle-wrap.secondPercentage .circle .fill {
+        animation: secondPercentage ease-in-out 3s forwards;
+    }
+
+    .circle-wrap.thirdPercentage .circle .mask.full,
+    .circle-wrap.thirdPercentage .circle .fill {
+        animation: thirdPercentage ease-in-out 3s forwards;
+    }
+
+    .circle-wrap .inside-circle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        background: #fff;
+        margin-top: 10px;
+        margin-left: 10px;
+        text-align: center;
+    }
+
+    @keyframes firstPercentage {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(160deg);
+        }
+    }
+
+    @keyframes secondPercentage {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(173deg);
+        }
+    }
+
+    @keyframes thirdPercentage {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(180deg);
+        }
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
 .top-box {
     text-align: left;
 }
