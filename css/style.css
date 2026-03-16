@@ -1906,7 +1906,7 @@ a.a-close {
 @media(max-width: 1036px){
 	.mid-logo a{
 	display: block;
-	top: 87px;
+	top: 94px;
 }
 .pack-top{
 	margin-top: 100px;
@@ -1951,6 +1951,10 @@ a.cut-1 {
 }
 
 @media(max-width: 1024px){
+
+.mid-logo a {
+    top: 87px;
+}
 .full-sallon{
 	padding-left: 20px;
 	padding-right: 20px;
@@ -2029,7 +2033,7 @@ a.close-content {
 }
 .mid-logo a {
     right: -100px;
-    top: 117px;
+    top: 87px;
 }
 .popup {
     padding: 20px;
@@ -2071,6 +2075,11 @@ a.logo-right{
 
 @media (max-width: 767px){
 
+.mid-logo a {
+    left: 0;
+    top: 117px;
+    z-index: 2;
+}
 .pack-top, .pack-bottom{
 	margin-top: 30px;
 }
@@ -2107,7 +2116,7 @@ table{
 .m-block{
 	display: block;
 }
-.mid-logo, .sallon-content, .tab-section, .sallon-bottom .table .table-cell:last-child, .m-none {
+.sallon-content, .tab-section, .sallon-bottom .table .table-cell:last-child, .m-none {
     display: none;
 }
 .mid-left, .mid-right {
