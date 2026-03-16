@@ -2076,9 +2076,7 @@ a.logo-right{
 @media (max-width: 767px){
 
 .mid-logo a {
-    left: 0;
-    top: 117px;
-    z-index: 2;
+   display: none;
 }
 .pack-top, .pack-bottom{
 	margin-top: 30px;
@@ -2135,7 +2133,7 @@ table{
     border-top: 1px solid #7c7c7c45;
     border-bottom: 1px solid #7c7c7c45;
 }
-.first-section .card, .third-section .banner-text{
+.first-section .card{
 	width: 100%;
 }
 .first-section .message-box a:first-child{
@@ -2219,9 +2217,6 @@ a.close-content {
 .s-left{
 	text-align: center;
 }
-.first-section a.camera, .third-section a.camera, .four-section a.camera, .seven-section a.camera{
-	top: 138px;
-}
 .cell-one{
 	padding: 20px;
 }
@@ -2256,6 +2251,9 @@ a.close-content {
 }
 .hader-menu .sub-menu{
 	margin-top: 25px;
+}
+.third-section .banner-text{
+    width: 100%;
 }
 }
 
