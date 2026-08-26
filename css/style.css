@@ -466,13 +466,14 @@ a.close-content {
     float: left;
     padding-top: 50px;
 }
-.banner-box {
-   margin: -35px -15px 0;     
+.mrg-down{
+    display: flex; 
+    flex-flow: row wrap;
 }
-.banner-text{
-    width: 25%;
+.banner-box {
+      width: 25%;
     float: left;
-	padding: 35px 15px 0;
+    padding: 35px 15px 0; 
 }
 .banner-middle{
 	text-align: left;
