@@ -1620,7 +1620,7 @@ a.a-close {
 .first-section a.camera{
 	top: 20px;
 }
-.first-section .card, .third-section .banner-text{
+.first-section .card, .third-section .banner-box{
 	width: 33.33%;
 }
 .first-section .box-section {
@@ -2017,6 +2017,10 @@ a.close-content {
 
 @media(max-width: 979px){
 
+.notification-section{
+    top: 55px;
+    right: 70px;
+}
 .pack-top{
 	margin-top: 50px;
 }
@@ -2026,7 +2030,7 @@ a.close-content {
 .s-payment table tr td {
     padding: 20px 10px;
 }
-.third-section .banner-text{
+.third-section .banner-box{
 	width: 50%;
 }
 .mid-left{
@@ -2046,10 +2050,10 @@ a.logo-right{
 .hide-input {
     max-width: 370px;
 }
-.card, .banner-text{
-	width: 50%;
+.card, .banner-box{
+    width: 50%;
 }
-.banner-text, .card {
+.banner-box, .card {
     padding: 20px 10px 0;
 }
 .banner-img img {
@@ -2182,9 +2186,6 @@ header{
 .submit input[type="submit"] {
     background-size: 100% 27px;
 }
-.notification-section{
-	left: -448px;
-}
 a.close-content {
     right: 20px;
     top: 50px;
@@ -2253,7 +2254,7 @@ a.close-content {
 .hader-menu .sub-menu{
 	margin-top: 25px;
 }
-.third-section .banner-text{
+.third-section .banner-box{
     width: 100%;
 }
 }
@@ -2267,7 +2268,7 @@ a.close-content {
     display: inline-block;
     padding: 0 15px;
 }
-.card, .banner-text {
+.card, .banner-box {
     width: 100%;
 }
 .footer ul li{
@@ -2304,6 +2305,18 @@ a.close-content {
     color: #000;
     font-size: 18px;
     line-height: 20px;
+}
+.notification-section {
+    top: 55px;
+    right: 0;
+    padding: 20px 10px;
+}
+.notification-box .table .table-cell:first-child, .notification-box .table .table-cell:last-child {
+    width: 100%;
+    display: block;
+}
+.list-box {
+    margin-top: 20px;
 }
 }
 /* media query end */
